@@ -8,10 +8,11 @@
             "name": "Launch: 01-core-process",
             "type": "go",
             "request": "launch",
-            "mode": "auto",
+            "mode": "exec",
             "asRoot": true,
             "console": "integratedTerminal",
-            "program": "${workspaceFolder}/01-core-process"
+            "program": "${workspaceFolder}/01-core-process/__debug_bin",
+            "preLaunchTask": "go: build 01-core-process",
         }
     ]
 }

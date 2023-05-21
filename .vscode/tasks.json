@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "go: build 01-core-process",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "build",
+                "-gcflags=all=-N -l",
+                "-o",
+                "${workspaceFolder}/01-core-process/__debug_bin",
+                "./01-core-process",
+            ],
+        }
+    ]
+}
